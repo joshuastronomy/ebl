@@ -1,8 +1,8 @@
 <?php
 
 // configure
-$from = 'joshua@editingbyluke.com';
-$sendTo = 'joshua@editingbyluke.com';
+$from = 'contact@editingbyluke.com';
+$sendTo = 'contact@editingbyluke.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'comments' => 'Comments'); // array variable name => Text to appear in email
 $okMessage = 'Thanks, keep in touch!';
