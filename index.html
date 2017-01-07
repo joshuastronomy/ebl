@@ -6,18 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body {
-            font: 400 15px Lato, sans-serif;
+            font: 400 15px Open Sans, sans-serif;
             line-height: 1.8;
             color: #818181;
         }
 
         h2 {
+            font-family: Old Standard TT;
             font-size: 24px;
             text-transform: uppercase;
             color: #303030;
@@ -26,6 +26,7 @@
         }
 
         h4 {
+          font-family: Open Sans;
             font-size: 19px;
             line-height: 1.375em;
             color: #303030;
@@ -33,11 +34,23 @@
             margin-bottom: 30px;
         }
 
+        #serviced h4  {
+          font-family: Old Standard TT;
+        }
+
+        #pricing h1  {
+          font-family: Old Standard TT;
+        }
+
+        #mynavbar li  {
+          font-family: Open Sans;
+        }
+
         .jumbotron {
             background-color: #1f5391;
             color: #fff;
             padding: 100px 25px;
-            font-family: Montserrat, sans-serif;
+            font-family: Old Standard TT, sans-serif;
         }
 
         .container-fluid {
@@ -151,7 +164,7 @@
             line-height: 1.42857143 !important;
             letter-spacing: 4px;
             border-radius: 0;
-            font-family: Montserrat, sans-serif;
+            font-family: Old Standard TT, sans-serif;
         }
 
         .navbar li a,
@@ -297,7 +310,7 @@
         <h2>Editing Services</h2>
         <h4>What I offer</h4>
         <br>
-        <div class="row slideanim">
+        <div id="serviced" class="row slideanim">
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-globe logo-small"></span>
                 <h4>Developmental</h4>
@@ -427,7 +440,7 @@
                 <p><span class="glyphicon glyphicon-phone"></span> 317.555.5555</p>
                 <p><span class="glyphicon glyphicon-envelope"></span> luke@editingbyluke.com</p>
             </div>
-            <div class="col-sm-7 slideanim">
+            <div class="col-sm-7">
                 <form id="contact-form" method="post" action="sendmail.php" role="form">
                     <div class="messages"></div>
                     <div class="row">
