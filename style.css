@@ -36,6 +36,33 @@ h4 {
     font-family: Old Standard TT;
 }
 
+#editbox  {
+    background-image: url("http://i.imgur.com/8rT6X0W.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+
+}
+
+#portfolio  {
+  background-image: url("http://i.imgur.com/UryoTNL.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#contact  {
+  background-image: url("http://i.imgur.com/mUqJsK5.jpg");
+  background-attachment: fixed;
+  background-position: center top 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron {
     background-color: #1f5391;
     color: #fff;
