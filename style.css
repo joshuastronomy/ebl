@@ -115,7 +115,7 @@ h4 {
 #lukeport  {
     height: 300px;
     width: 300px;
-    margin-left: 100px;
+    border-left: 100px;
 }
 
 #serviced h4 {
