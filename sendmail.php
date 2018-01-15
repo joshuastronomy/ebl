@@ -5,25 +5,29 @@ $from = 'contact@editingbyluke.com';
 $sendTo = 'contact@editingbyluke.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'comments' => 'Comments'); // array variable name => Text to appear in email
+$honeypot = $_POST['firstname'];
 $okMessage = 'Thanks, keep in touch!';
 $errorMessage = 'There was an error while submitting the form. Please try again later.';
 
 // let's do the sending
+if ( $honeypot > 1 ){
+    return; //you may add code here to echo an error etc.
+} else {
+    try
+    {
+        $emailText = "You have new message from contact form\n=============================\n";
 
-try
-{
-    $emailText = "You have new message from contact form\n=============================\n";
+        foreach ($_POST as $key => $value) {
 
-    foreach ($_POST as $key => $value) {
-
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
+            if (isset($fields[$key])) {
+                $emailText .= "$fields[$key]: $value\n";
+            }
         }
+
+        mail($sendTo, $subject, $emailText, "From: " . $from);
+
+        $responseArray = array('type' => 'success', 'message' => $okMessage);
     }
-
-    mail($sendTo, $subject, $emailText, "From: " . $from);
-
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
 catch (\Exception $e)
 {
